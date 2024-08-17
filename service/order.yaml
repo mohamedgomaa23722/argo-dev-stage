@@ -1,0 +1,31 @@
+group: example
+stage: test
+namespace: argocd
+templateApp: order-template
+container:
+  name: order-service
+
+deployment:
+  name: js-order-service-deployment
+
+config:
+  name: order-config-map-env
+  volume:
+    name: order-config-map
+
+image:
+  name: microservice-order:7
+
+port: 8080
+name: js-order-service
+
+payment:
+  uri: http://payment-svc.cloud-test.svc.cluster.local:8080
+
+user:
+  uri: http://user-svc.cloud-test.svc.cluster.local:8080
+
+replicas: 2
+
+service:
+  name: order-svc
