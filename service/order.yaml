@@ -18,6 +18,7 @@ image:
 
 port: 8080
 name: js-order-service
+domain: order
 
 payment:
   uri: http://payment-svc.cloud-test.svc.cluster.local:8080

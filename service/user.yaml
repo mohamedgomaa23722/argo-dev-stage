@@ -4,6 +4,7 @@ namespace: argocd
 templateApp: user-template
 container:
   name: user-service
+domain: user
 
 deployment:
   name: js-user-service-deployment
