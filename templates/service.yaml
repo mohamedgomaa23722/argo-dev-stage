@@ -14,9 +14,9 @@ spec:
     repoURL: "https://github.com/mohamedgomaa23722/argo-service.git"
     targetRevision: master
     helm:
-      parameters:
-        - name: "service"
-          value: {{$service}}
+#      parameters:
+#        - name: "service"
+#          value: {{$service}}
       values: |
          {{- printf "service/%s.yaml" $service | $.Files.Get | nindent 8 }}
   syncPolicy:
