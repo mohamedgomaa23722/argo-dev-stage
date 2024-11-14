@@ -12,7 +12,7 @@ deployment:
 config:
   name: user-config-map-env
   volume:
-    name: user-config-map
+    name: user-config-maps
 
 image:
   name: microservice-user:2
