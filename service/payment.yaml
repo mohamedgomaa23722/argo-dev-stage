@@ -19,7 +19,7 @@ image:
 port: 8080
 name: js-payment-service
 domain: payment
-replicas: 1
+replicas: 2
 
 service:
   name: payment-svc
