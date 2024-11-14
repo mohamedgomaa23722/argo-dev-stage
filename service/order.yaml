@@ -14,7 +14,7 @@ config:
     name: order-config-map
 
 image:
-  name: microservice-order:7
+  name: microservice-order:3
 
 port: 8080
 name: js-order-service

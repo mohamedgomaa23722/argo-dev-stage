@@ -6,7 +6,7 @@ container:
   name: payment-service
 
 deployment:
-  name: js-payment-service-deployment
+  name: js-payment-service-deployment1
 
 config:
   name: payment-config-map-env
